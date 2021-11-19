@@ -20,8 +20,8 @@ GAMMA = 0.9                                     # reward discount
 TARGET_REPLACE_ITER = 10                       # 目标网络更新频率
 MEMORY_CAPACITY = 2000                          # 记忆库容量
 N_ACTIONS = 5
-env =Env(N_ACTIONS)        # 使用gym库中的环境：CartPole，且打开封装(若想了解该环境，请自行百度)             # 杆子动作个数 (2个)
-N_STATES =  28  # 杆子状态个数 (4个)
+env =Env(N_ACTIONS)       
+N_STATES =  28  
 
 
 
@@ -63,8 +63,9 @@ class DQN(object):
         self.loss =0
         self.q_eval=0
         self.q_target=0
+        #加载模型
         if self.load_models:
-            self.epsilon= 1
+            self.epsilon= 1                                                     #设置加载模型后是否探索
             checkpoint = torch.load("/home/syzx/QDN/model/"+str(self.load_ep)+".pt")
             print(checkpoint.keys())
             print(checkpoint['epoch'])
@@ -129,7 +130,7 @@ class DQN(object):
 
 
         
-
+#保存模型
     def save_model(self,dir):
         state = {'target_net':self.target_net.state_dict(),'eval_net':self.eval_net.state_dict(), 'optimizer':self.optimizer.state_dict(), 'epoch':e}
         torch.save(state,"/home/syzx/QDN/model/"+ dir+"a.pt")
