@@ -48,7 +48,8 @@ bash Anaconda3-2021.11-Linux-x86_64.sh
 创建安装虚拟环境：
 
 
-conda env export > py27.yaml
+conda env create -f py2.yaml
+
 
 
 环境搭建完成？？？！！！
