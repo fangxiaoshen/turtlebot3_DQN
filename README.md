@@ -38,12 +38,20 @@ sudo apt-get install curl && curl http://fishros.com/tools/install/ros-melodic |
 curl http://fishros.com/tools/install/rosdepc | bash
 
 下载安装anaconda：
+
 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2021.11-Linux-x86_64.sh
+
+
 bash Anaconda3-2021.11-Linux-x86_64.sh
+
+
 创建安装虚拟环境：
+
+
 conda env export > py27.yaml
 
-环境搭建完成？？？
+
+环境搭建完成？？？！！！
 
 
 
