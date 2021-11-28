@@ -32,6 +32,7 @@ https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2021.11-Linux-x8
 bash Anaconda3-2021.11-Linux-x86_64.sh
 创建安装虚拟环境：
 conda env export > py27.yaml
+
 环境搭建完成？？？
 
 
