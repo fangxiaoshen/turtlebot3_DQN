@@ -1,5 +1,6 @@
-# turtlebot3_DQN
-使用DQN，pytorch，turtlebot3，gazebo
+# 环境
+ubuntu18.04 + pytorch+ ros-melodic+gazebo
+
 N_STATES =  28  N_ACTIONS = 5
 
 启动仿真环境：
