@@ -59,6 +59,16 @@ conda env create -f py2.yaml
 
 N_STATES =  28  N_ACTIONS = 5
 
+效果：
+
+PPO
+
+https://www.bilibili.com/video/BV1zq4y1g7aM/
+
+DQN:
+
+https://www.bilibili.com/video/BV1BP4y1G7b1/
+
 启动仿真环境：
 roslaunch turtlebot3_gazebo turtlebot3_stage_2.launch
 在vscore启动DQN2.py
