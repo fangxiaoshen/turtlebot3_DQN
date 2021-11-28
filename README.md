@@ -6,15 +6,25 @@ ubuntu18.04安装跳过
 国内：ROS换阿里源
 sudo gedit /etc/apt/sources.list
 全部删除然后粘贴
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
 
 更新
