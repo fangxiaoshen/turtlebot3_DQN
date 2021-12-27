@@ -1,7 +1,7 @@
 # 环境
 ubuntu18.04 + pytorch+ ros-melodic+gazebo
 
-环境配置：
+# 环境配置：
 ubuntu18.04安装跳过
 国内：ROS换阿里源
 sudo gedit /etc/apt/sources.list
@@ -49,6 +49,21 @@ bash Anaconda3-2021.11-Linux-x86_64.sh
 
 
 conda env create -f py2.yaml
+
+conda activate py2
+
+cd catkin_wp/src
+
+git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+cd ..
+catkin_make
+source ~/catkin_wp/devel/setup.bash
+roslauch turtlebot3_gazebo turtlebot3_stage1.launch
+
+git clone 这个包 -不用编译
+
 
 
 
