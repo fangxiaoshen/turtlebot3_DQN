@@ -55,12 +55,23 @@ conda activate py2
 cd catkin_wp/src
 
 git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+
 cd ..
+
 catkin_make
+
 source ~/catkin_wp/devel/setup.bash
+
 roslauch turtlebot3_gazebo turtlebot3_stage1.launch
+
+# 然后可以使用vscore来进行使用强化学习的代码
+
+## 需要改几个地方，主要是路径问题。可以使用Ctrl+f 寻找 home来修改路径。
+
 
 git clone 这个包 -不用编译
 
