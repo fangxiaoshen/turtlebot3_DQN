@@ -143,6 +143,22 @@ roslaunch turtlebot3_gazebo turtlebot3_stage_2.launch
 
 self.loal_model=false
 
+# 迁移到ububtu20.04和python3 出现的报错
+‘Exception in thread /hero/local_planner/action_server/result:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_pubsub.py", line 185, in robust_connect_subscriber
+    conn.receive_loop(receive_cb)	    
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py", line 846, in receive_loop
+    self.close()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py", line 858, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'’
+
+‘sudo gedit /opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py’
 
 
 
